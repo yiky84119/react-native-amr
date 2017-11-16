@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "React Native Plugin for iOS.",
   "keywords": [
-    "AMR",
-    "amr",
+    "amr"
   ],
   "homepage": "https://github.com/yiky84119/react-native-amr.git",
   "bugs": {
@@ -18,13 +17,13 @@
     "url": "git+https://github.com/yiky84119/react-native-amr.git"
   },
   "scripts": {
-    "format": "prettier --write --no-semi --single-quote --trailing-comma all ./index.js ",
+    "format": "prettier --write --no-semi --single-quote --trailing-comma all ./index.js "
   },
   "devDependencies": {
     "react": "16.0.0",
-    "react-native": "^0.45.1",
+    "react-native": "^0.45.1"
   },
   "jest": {
-    "preset": "react-native",
+    "preset": "react-native"
   }
 }
