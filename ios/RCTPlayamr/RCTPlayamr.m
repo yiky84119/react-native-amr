@@ -93,7 +93,7 @@ RCT_EXPORT_METHOD(getAudioTime:(NSString*)name withCallback:(RCTResponseSenderBl
             [mCallback release];
             mCallback = nil;
         }
-    } else if(status == 2){
+    } else if(status == 2 || status == 4){
         if (mCallback) {
             NSDictionary *userInfo = @{
                                        NSLocalizedDescriptionKey: NSLocalizedString(@"Operation fail", nil),
@@ -103,7 +103,7 @@ RCT_EXPORT_METHOD(getAudioTime:(NSString*)name withCallback:(RCTResponseSenderBl
             NSError *error = [NSError errorWithDomain:ErrorDomain
                                                  code:Error_Code_Play_File_Failed
                                              userInfo:userInfo];
-            mCallback(@[RCTJSErrorFromNSError(error), @{@"status": @(2)}]);
+            mCallback(@[RCTJSErrorFromNSError(error), @{@"status": @(status)}]);
             [mCallback release];
             mCallback = nil;
         }
