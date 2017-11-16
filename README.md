@@ -1,6 +1,15 @@
 # react-native-amr
 Native AMR play for react-native (iOS only)
 
+```bash
+npm install react-native-amr
+react-native link react-native-amr
+```
+
+
+```js
+import AMR from 'react-native-amr'
+
 AMR.stop();
 
 //callback: (error, event: {status}) => void)
@@ -20,3 +29,4 @@ AMR.play(path, (error, event) => {
         console.log('can't play');
     }
 });
+```
