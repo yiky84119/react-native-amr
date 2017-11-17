@@ -26,7 +26,7 @@ AMR.play(path, (error, event) => {
         }
     } else {
         //event.status = 2
-        console.log('can't play');
+        console.log('can\'t play');
     }
 });
 
